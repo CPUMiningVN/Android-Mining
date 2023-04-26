@@ -2,11 +2,7 @@
 
 Huong dan dao coin BNB tren Dien thoai Android 2023: 
 
-1, Cai userland tren CHplay 
-
-2, chay Userland ubuntu 
-
-3, Setup Xmrig cho Android 
+1, Setup Xmrig cho Android 
 
 sudo apt install ca-certificates
 
@@ -14,7 +10,7 @@ sudo apt update -y && sudo apt install curl -y && curl https://raw.githubusercon
 
 cd && cd xmrig/build
 
-4, setup pool dao unMineable: 
+2, setup pool dao unMineable: 
 
 ./xmrig 
 
