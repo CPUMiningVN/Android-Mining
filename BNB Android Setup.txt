@@ -4,6 +4,7 @@ Huong dan dao coin BNB tren Dien thoai Android 2023:
 
 1, Setup Xmrig cho Android 
 
+sudo apt install ca-certificates
 sudo apt update -y && sudo apt install curl -y && curl https://raw.githubusercontent.com/HighVoltage557/XmrigOnAndroid/main/compile.sh | bash
 
 
