@@ -32,24 +32,22 @@ y enter
 
 
 
-
-
-
 II, Lenh setup nhanh: 
 
 
 ! sudo su
 
-! wget https://github.com/dero-am/astrobwt-miner/releases/download/V1.9/astrominer-V1.9_aarch64_linux.tar.gz --no-check-certificate
+! wget https://github.com/dero-am/astrobwt-miner/releases/download/V1.9.1/astrominer-V1.9.1.R2_aarch64_linux.tar.gz --no-check-certificate
 
-! tar xvaf astrominer-V1.9_aarch64_linux.tar.gz
+! tar xvaf astrominer-V1.9.1.R2_aarch64_linux.tar.gz
 
 ! apt-get install nano 
 
 ! nano rpc_mining.sh 
 
--w videro  -r community-pools.mysrv.cloud:10300 -r1 dero.rabidmining.com:10300 -r2 dero.friendspool.club:10300 
+sửa các thông số sau: -w vídero  -r community-pools.mysrv.cloud:10300 -r1 dero.rabidmining.com:10300 
 
+lưu lại file bằng lệnh: 
 
 ctrl x  
 
