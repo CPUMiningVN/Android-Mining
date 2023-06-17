@@ -1,0 +1,1956 @@
+
+
+
+
+
+
+Solo vps 112cpu  96t
+
+! sudo su 
+
+! git https://github.com/CPUMiningVN/HD.git
+
+ ! cd HD 
+
+ ! chmod +x rpc_mining.sh 
+
+ ! chmod u+x astrominer 
+
+ ! screen -R
+
+ ! ./rpc_mining.sh 
+
+ !
+
+
+Nếu boxphone ko chạy dc git thì update trước bằng list lệnh này: 
+
+1, chạy lệnh update 
+
+apt-get update - y 
+
+apt-get upgrade -y
+
+2, sau đó copy đoạn lệnh sau: 
+
+! sudo su 
+
+! git https://github.com/CPUMiningVN/HD.git
+
+ ! cd HD 
+
+ ! chmod +x rpc_mining.sh 
+
+ ! chmod u+x astrominer 
+
+ ! screen -R
+
+ ! ./rpc_mining.sh 
+
+ !
+
+
+
+
+
+
+
+
+
+112cpu vps new setup: 
+
+#!/bin/bash
+sudo su 
+
+git clone https://github.com/digitalatz18/arch.git
+
+cd arch 
+
+chmod +x rpc_mining.sh 
+
+chmod u+x astrominer 
+
+./rpc_mining.sh 
+
+
+------
+
+3cpu pool
+
+
+! sudo su 
+
+! git clone https://github.com/digitalatz18/namvu.git
+
+ ! cd namvu 
+
+ ! chmod +x rpc_mining.sh 
+
+ ! chmod u+x astrominer 
+
+ ! screen -R
+
+ ! ./rpc_mining.sh 
+
+ !
+
+
+
+3cpu pool vps new setup
+
+#!/bin/bash
+sudo su 
+
+git clone https://github.com/digitalatz18/namvu.git
+
+cd namvu 
+
+chmod +x rpc_mining.sh 
+
+chmod u+x astrominer 
+
+./rpc_mining.sh 
+
+
+------
+
+5cpu pool
+
+
+! sudo su 
+
+! git clone https://github.com/digitalatz18/namvu.git
+
+ ! cd namvu 
+
+ ! chmod +x rpcpl_mining.sh 
+
+ ! chmod u+x astrominer 
+
+ ! screen -R
+
+ ! ./rpcpl_mining.sh 
+
+ !
+
+
+5cpu vps new setup
+
+#!/bin/bash
+sudo su 
+
+git clone https://github.com/digitalatz18/namvu.git
+
+cd namvu 
+
+chmod +x rpcpl_mining.sh 
+
+chmod u+x astrominer 
+
+./rpcpl_mining.sh 
+
+
+------
+
+48 cpu pool 
+
+
+! sudo su 
+
+! git clone https://github.com/digitalatz18/48pool.git
+
+ ! cd 48pool
+
+ ! chmod +x rpc_mining.sh 
+
+ ! chmod u+x astrominer 
+
+ ! screen -R
+
+ ! ./rpc_mining.sh 
+
+ !
+
+
+48cpu solo 
+
+! sudo su 
+
+! git clone https://github.com/digitalatz18/48c.git
+
+ ! cd 48c 
+
+ ! chmod +x rpc_mining.sh 
+
+ ! chmod u+x astrominer 
+
+ ! screen -R
+
+ ! ./rpc_mining.sh 
+
+ !
+
+
+
+
+48cpu vps new setup:
+
+#!/bin/bash
+sudo su 
+
+git clone https://github.com/digitalatz18/48c.git
+
+cd 48c 
+
+chmod +x rpcpl_mining.sh 
+
+chmod u+x astrominer 
+
+./rpcpl_mining.sh 
+
+
+
+64cpu solo 
+
+! sudo su 
+
+! git clone https://github.com/digitalatz18/64.git
+
+ ! cd 64 
+
+ ! chmod +x rpc_mining.sh 
+
+ ! chmod u+x astrominer 
+
+ ! screen -R
+
+ ! ./rpc_mining.sh 
+
+ !
+
+
+
+
+
+#!/bin/bash
+sudo su 
+
+git clone https://github.com/digitalatz18/48pool.git
+
+cd 48pool 
+
+chmod +x rpc_mining.sh 
+
+chmod u+x astrominer 
+
+./rpc_mining.sh 
+
+
+
+
+
+
+Setup node Dero:
+
+http://git.dero.io:2029/
+
+! wget http://git.dero.io:2029/dero_linux_amd64_3.5.3-139.DEROHE.STARGATE%2B04042023.tar.gz
+
+! tar xvaf dero_linux_amd64_3.5.3-139.DEROHE.STARGATE+04042023.tar.gz
+
+! cd dero_linux_amd64 
+
+! ./derod-linux-amd64 --fastsync
+
+!
+
+
+
+
+
+
+
+
+
+
+
+sudo apt install xfsprogs ntpdate
+fallocate -l 100G dataFsFile
+mkfs.xfs -f  -i maxpct=100 -m crc=0 -i size=256 -b size=512  dataFsFile
+mkdir Nodekhoa ; chmod -R 777 Nodekhoa
+mount dataFsFile Nodekhoa
+cd Nodekhoa      
+
+
+! wget https://github.com/deroproject/derohe/releases/latest/download/dero_linux_amd64.tar.gz
+
+! tar xvzf dero_linux_amd64.tar.gz
+ 
+
+
+
+! cd Nodekhoa
+
+! cd dero_linux_amd64 
+
+! ./derod-linux-amd64 --integrator-address=dero1qyywjapvlv8cqhd4acclueug9t5p2keypepky7kg00xtqjkug3cuqqq7j0r3a
+
+
+! wget https://github.com/Hansen333/Hansen33-s-DERO-Miner/releases/download/Version-0.5/hansen33s-dero-miner-linux-amd64.tar.gz
+
+! tar xvaf hansen33s-dero-miner-linux-amd64.tar.gz
+
+! ./hansen33s-dero-miner-linux-amd64 -workers 12 -mining-threads 8 -wallet-address=dero1qyywjapvlv8cqhd4acclueug9t5p2keypepky7kg00xtqjkug3cuqqq7j0r3a -daemon-rpc-address=community-pools.mysrv.cloud:10300 
+
+!
+
+
+
+
+
+xmrig --url pool.hashvault.pro:80 --user 879BDuxySK7LFfrGrSVxUm3RGBbT8ncYUYnbgTMWiiSdSQ5GMmsRJXYAugN9eiRwfPUehDvQJEB7L6RFStfbNzcPF3zJ9s3 --pass x --donate-level 1 --tls --tls-fingerprint 420c7850e09b7c0bdcf748a7da9eb3647daf8515718f36d9ccfdd6b9ff834b14
+
+
+! sudo su
+
+! wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.29/cpuminer-opt-linux.tar.gz
+
+! tar xavf cpuminer-opt-linux.tar.gz
+
+! screen -R 
+
+! ./cpuminer-sse2amd -a minotaurx  -o stratum+tcps://stratum-eu.rplant.xyz:17063 -u PH7pmbGjhWJ5sGjxc9h2ekDZdKEUMgdTRF.vps112 -t 96
+
+!
+
+dero   20.495
+
+! sudo su
+
+! screen -R 
+
+! ./cpuminer-sse2amd -a minotaurx  -o stratum+tcps://stratum-eu.rplant.xyz:17063 -u PH7pmbGjhWJ5sGjxc9h2ekDZdKEUMgdTRF.vps112 -t 96
+
+!
+
+
+
+
+
+
+ sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.0/xmrig-6.19.0-focal-x64.tar.gz
+
+! tar xavf xmrig-6.19.0-focal-x64.tar.gz
+
+! cd xmrig-6.19.0
+
+! screen -R
+
+! ./xmrig --url pool.hashvault.pro:80 --user 879BDuxySK7LFfrGrSVxUm3RGBbT8ncYUYnbgTMWiiSdSQ5GMmsRJXYAugN9eiRwfPUehDvQJEB7L6RFStfbNzcPF3zJ9s3 --pass 112e --threads=96 --donate-level 1 --tls --tls-fingerprint 420c7850e09b7c0bdcf748a7da9eb3647daf8515718f36d9ccfdd6b9ff834b14
+
+!
+
+
+
+
+
+xmrsolo.cpumining.cloud:3333    node khoa 
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.0/xmrig-6.19.0-focal-x64.tar.gz
+
+! tar xavf xmrig-6.19.0-focal-x64.tar.gz
+
+! cd xmrig-6.19.0
+
+! screen -R
+
+! ./xmrig -o xmrsolo.cpumining.cloud:3333 --threads=96
+
+! 
+
+
+
+
+./xmrig -o 104.208.66.249:3333 --threads=96
+
+
+
+
+
+
+ ./xmrig -o 20.212.57.218:3333 --threads=96
+
+
+
+
+
+
+
+
+
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz
+
+! tar xavf xmrig-6.19.2-linux-x64.tar.gz
+
+! cd xmrig-6.19.2
+
+! screen -R 
+
+! ./xmrig -o rx.unmineable.com:3333 -a rx -k -u FLUX:t1doGqw8vhByevGbnjEgomfQ5uk2SVYhQjU.vps112 -pass x -t 96
+
+!
+
+
+
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz
+
+! tar xavf xmrig-6.19.2-linux-x64.tar.gz
+
+! cd xmrig-6.19.2
+
+! screen -R 
+
+! ./xmrig -o rx.unmineable.com:3333 -a rx -k -u FLUX:t1doGqw8vhByevGbnjEgomfQ5uk2SVYhQjU.pc048 -pass x -t 40
+
+!
+
+
+
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz
+
+! tar xavf xmrig-6.19.2-linux-x64.tar.gz
+
+! cd xmrig-6.19.2
+
+! screen -R 
+
+! ./xmrig -o rx.unmineable.com:3333 -a rx -k -u FLUX:t1doGqw8vhByevGbnjEgomfQ5uk2SVYhQjU.vps112 -pass x -t 98
+
+!
+
+
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz
+
+! tar xavf xmrig-6.19.2-linux-x64.tar.gz
+
+! cd xmrig-6.19.2
+
+! screen -R 
+
+! ./xmrig -o rx.unmineable.com:3333 -a rx -k -u FLUX:t1doGqw8vhByevGbnjEgomfQ5uk2SVYhQjU.vps112 -pass x -t 3
+
+!
+
+
+
+#!/bin/bash
+sudo su
+
+wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz
+
+tar xavf xmrig-6.19.2-linux-x64.tar.gz
+
+cd xmrig-6.19.2
+
+./xmrig -o rx.unmineable.com:3333 -a rx -k -u FLUX:t1doGqw8vhByevGbnjEgomfQ5uk2SVYhQjU.pc031 -pass x -t 3
+
+
+
+
+
+
+
+
+4cpu 
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.1/xmrig-6.19.1-linux-static-x64.tar.gz
+
+! tar xavf xmrig-6.19.1-linux-static-x64.tar.gz
+
+! cd xmrig-6.19.1
+
+! screen -R
+
+! ./xmrig -o rx.unmineable.com:3333 -a rx -k -u BNB:0xff63bbe13de6d2e5841a99daea14555ddf91c650.pc03 -pass x -t 3
+
+!
+
+
+48cpu
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz
+
+! tar xavf xmrig-6.19.2-linux-x64.tar.gz
+
+! cd xmrig-6.19.2
+
+! screen -R 
+
+! ./xmrig -o rx.unmineable.com:3333 -a rx -k -u BNB:0xff63bbe13de6d2e5841a99daea14555ddf91c650.pc48 -pass x -t 40
+
+!
+
+
+
+
+
+sudo su
+wget https://github.com/xmrig/xmrig/releases/download/v6.19.1/xmrig-6.19.1-linux-static-x64.tar.gz
+tar xavf xmrig-6.19.1-linux-static-x64.tar.gz
+cd xmrig-6.19.1
+./xmrig -o rx.unmineable.com:3333 -a rx -k -u BNB:0xff63bbe13de6d2e5841a99daea14555ddf91c650.pc03 -pass x -t 40"
+
+
+
+
+
+
+#!/bin/bash
+sudo su
+
+wget https://github.com/xmrig/xmrig/releases/download/v6.19.1/xmrig-6.19.1-linux-static-x64.tar.gz
+
+tar xavf xmrig-6.19.1-linux-static-x64.tar.gz
+
+cd xmrig-6.19.1
+
+./xmrig -o rx.unmineable.com:3333 -a rx -k -u BNB:0xff63bbe13de6d2e5841a99daea14555ddf91c650.pc98 -pass x -t 98
+
+
+
+
+
+#!/bin/bash
+sudo su
+
+wget https://github.com/xmrig/xmrig/releases/download/v6.19.1/xmrig-6.19.1-linux-static-x64.tar.gz
+
+tar xavf xmrig-6.19.1-linux-static-x64.tar.gz
+
+cd xmrig-6.19.1
+
+./xmrig -o rx.unmineable.com:3333 -a rx -k -u BNB:0xff63bbe13de6d2e5841a99daea14555ddf91c650.pc48 -pass x -t 40
+
+
+
+#!/bin/bash
+sudo su
+
+wget https://github.com/xmrig/xmrig/releases/download/v6.19.1/xmrig-6.19.1-linux-static-x64.tar.gz
+
+tar xavf xmrig-6.19.1-linux-static-x64.tar.gz
+
+cd xmrig-6.19.1
+
+./xmrig -o rx.unmineable.com:3333 -a rx -k -u BNB:0xff63bbe13de6d2e5841a99daea14555ddf91c650.pc48 -pass x -t 1
+
+
+
+
+
+
+
+8cpu
+
+#!/bin/bash
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.1/xmrig-6.19.1-linux-static-x64.tar.gz
+
+! tar xavf xmrig-6.19.1-linux-static-x64.tar.gz
+
+! cd xmrig-6.19.1
+
+! ./xmrig -o rx.unmineable.com:3333 -a rx -k -u BNB:0xff63bbe13de6d2e5841a99daea14555ddf91c650.pc03 -pass x -t 5
+
+
+
+
+
+
+
+
+112cpu
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.1/xmrig-6.19.1-linux-static-x64.tar.gz
+
+! tar xavf xmrig-6.19.1-linux-static-x64.tar.gz
+
+! cd xmrig-6.19.1
+
+! screen -R
+
+! ./xmrig -o rx.unmineable.com:3333 -a rx -k -u BNB:0xff63bbe13de6d2e5841a99daea14555ddf91c650.pc03 -pass x -t 98
+
+!
+
+
+112cpu
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz
+
+! tar xavf xmrig-6.19.2-linux-x64.tar.gz
+
+! cd xmrig-6.19.2
+
+! screen -R
+
+! ./xmrig -o rx.unmineable.com:3333 -a rx -k -u BNB:0xff63bbe13de6d2e5841a99daea14555ddf91c650.pc9 -pass x -t 98
+
+!
+
+
+
+
+
+00A7DC1F863B06566D96CB03153D1869243391AF08CE4E1657
+
+
+
+
+
+
+! sudo su
+
+! wget https://github.com/hellcatz/hminer/releases/download/v0.57/hellminer_linux64_avx2.tar.gz
+
+! tar xvaf hellminer_linux64_avx2.tar.gz
+
+! screen -R 
+
+! ./hellminer -c stratum+tcp://eu.luckpool.net:3956 -u RV7dDc2AUMTNwitXo9rJkvsztCwT5HAmTZ.vp12p --cpu 96
+
+!
+
+
+
+
+
+
+
+! sudo su
+
+! wget https://github.com/hellcatz/hminer/releases/download/v0.57/hellminer_linux64_avx2.tar.gz
+
+! tar xvaf hellminer_linux64_avx2.tar.gz
+
+! screen -R 
+
+! ./hellminer -c stratum+tcp://eu.luckpool.net:3956 -u Viverus.vp3c --cpu 3
+
+!
+
+
+
+
+
+
+
+
+
+! sudo su
+
+! wget https://github.com/hellcatz/hminer/releases/download/v0.57/hellminer_linux64_avx2.tar.gz
+
+! tar xvaf hellminer_linux64_avx2.tar.gz
+
+! screen -R 
+
+! ./hellminer -c stratum+tcp://eu.luckpool.net:3956 -u RV7dDc2AUMTNwitXo9rJkvsztCwT5HAmTZ.vps112 -p hybrid --cpu 96
+
+!
+
+
+
+
+! sudo su
+
+! screen -R 
+
+! ./hellminer -c stratum+tcp://eu.luckpool.net:3956 -u RV7dDc2AUMTNwitXo9rJkvsztCwT5HAmTZ.vps112 -p hybrid --cpu 96
+
+!
+
+
+
+
+
+
+
+
+
+
+
+
+
+ip ssh root@207.154.247.253 DO node
+
+hangNong1234  pass DO node 
+
+
+ ! apt-get install git 
+
+ ! git clone https://github.com/khoacung/linux.git 
+
+ ! cd linux  
+
+ ! chmod +x rpc_mining.sh
+
+ ! chmod u+x astrominer
+
+ ! ./rpc_mining.sh 
+
+ ! 
+
+
+
+
+
+
+vps restart: 
+
+ ! sudo su
+
+ ! apt-get install git 
+
+ ! git clone https://github.com/khoacung/da213.git
+
+ ! cd da213 
+
+ ! chmod +x rpc_mining.sh
+
+ ! chmod u+x astrominer
+
+ ! screen -R
+
+ ! ./rpc_mining.sh 
+
+ ! 
+
+
+
+vps new: 
+
+#!/bin/bash
+ ! apt-get install git 
+
+ ! git clone https://github.com/khoacung/da213.git
+
+ ! cd da213 
+
+ ! chmod +x rpc_mining.sh
+
+ ! chmod u+x astrominer
+
+ ! ./rpc_mining.sh 
+
+
+Xmrig in termux android 
+
+
+apt-get update
+apt-get install git (You will be asked to enter `y` after sending this command.)
+pkg install cmake   (You will be asked to enter `y` after sending this command.)
+
+
+apt update 
+apt upgrade  
+git clone https://github.com/xmrig/xmrig.git 
+cd xmrig
+
+mkdir build
+cd build
+cmake -DWITH_HWLOC=OFF .. 
+
+make
+
+./xmrig -a cn-pico -o norpool.org:3333 -u SEKRaddressHere -p x -t numberOfThreads
+
+
+
+./xmrig --url pool.hashvault.pro:80 --user 879BDuxySK7LFfrGrSVxUm3RGBbT8ncYUYnbgTMWiiSdSQ5GMmsRJXYAugN9eiRwfPUehDvQJEB7L6RFStfbNzcPF3zJ9s3 --pass dt8c
+
+
+
+
+
+
+
+    --integrator-address=dero1qyywjapvlv8cqhd4acclueug9t5p2keypepky7kg00xtqjkug3cuqqq7j0r3a --add-priority-node=52.174.99.60:8080
+
+
+
+
+
+
+
+hodan phonefarm: 
+
+
+ ! apt-get install git 
+
+ ! git clone https://github.com/khoacung/hodan.git
+ 
+! cd hodan 
+
+ ! chmod +x rpc_mining.sh
+
+ ! chmod u+x astrominer
+
+ ! ./rpc_mining.sh 
+
+ ! 
+
+
+
+Câu lệnh setup đào dero cho VPS Linux: 
+
+! wget https://github.com/dero-am/astrobwt-miner/releases/download/V1.9/astrominer-V1.9_modern_amd64_linux.tar.gz --no-check-certificate  
+
+! tar xvaf astrominer-V1.9_modern_amd64_linux.tar.gz
+
+! screen -R 
+
+! apt-get install nano 
+
+! nano rpc_mining.sh 
+
+Nhập ví và pool vô file rồi Ctrl X , Y enter để saved lại.
+
+! ./rpc_mining.sh 
+
+! 
+
+
+auto chạy đào. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ví dero cli: dero1qyywjapvlv8cqhd4acclueug9t5p2keypepky7kg00xtqjkug3cuqqq7j0r3a 
+
+  Cài đặt Node Dero trên điện thoại Android: 
+
+  1, cài đặt Termux từ nguồn F-Droid
+
+   pkg update -y
+
+  apt-get install wget 
+
+  2, Tải file dero cho linux Arm64  
+
+  wget https://github.com/deroproject/derohe/releases/latest/download/dero_linux_arm64.tar.gz 
+
+
+  tar xvaf dero_linux_arm64.tar.gz
+
+  cd dero_linux_arm64  
+
+3, Chạy sync mạng lưới dero 
+  
+  ./derod-linux-arm64 --fastsync 
+
+  vi CLI 
+
+  ./dero-linux-cli-wallet-arm64 --remote 
+   
+4, ifconfig  check dia chi ip Node  
+    
+   192.168.0.102:10100  
+  
+  
+ 5, setup dao solo dero: astrominer 
+
+
+ ./astrominer -w dero1qyywjapvlv8cqhd4acclueug9t5p2keypepky7kg00xtqjkug3cuqqq7j0r3a -r1 community-pools.mysrv.cloud:10300 -r dero.friendspool.club:10300 -r2 nodent2.cpumining.cloud:10100 -p rpc  
+
+
+
+
+  !stats dero1qyywjapvlv8cqhd4acclueug9t5p2keypepky7kg00xtqjkug3cuqqq7j0r3a 0005 
+
+
+
+
+
+
+! wget https://github.com/dero-am/astrobwt-miner/releases/download/V1.7-BETA4/astrominer-V1.7_BETA4_aarch64_android.tar.gz --no-check-certificate
+
+! tar xvaf astrominer-V1.7_BETA4_aarch64_android.tar.gz 
+
+
+
+
+
+
+
+
+
+aware usual rule nature frown toast inhale gym click tunnel detect welcome
+
+
+
+
+
+dero1qyywjapvlv8cqhd4acclueug9t5p2keypepky7kg00xtqjkug3cuqqq7j0r3a
+
+
+Setup đào coin Dero cho VPS Linux Ubuntu và VPS Windows: 
+
+I, VPS Linux chạy Ubuntu 20.04 
+
+1, Login vào VPS 
+ 
+   sudo su         để chạy quyền admin root 
+
+2, Tải tool đào Astrominer mới nhất
+
+
+3, Nhập ví, địa chỉ pool, số cpu đào
+
+4, Chạy lệnh đào. 
+
+  ./rpc_mining.sh 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   monerod.exe --zmq-pub tcp://127.0.0.1:18083 --out-peers 64 --in-peers 32 --add-priority-node=node.supportxmr.com:18080 --add-priority-node=nodes.hashvault.pro:18080 --disable-dns-checkpoints --enable-dns-blocklist
+
+
+  p2pool.exe --host 127.0.0.1 --wallet 476JiFmLrXcHwUnjAj9zQxHMsp1Ejhzr83byh1i3XTEG2Uoxim19KzA6v5P5pJxLytENv8mDGVPZpP7UXSYkawDYKGAJ6U4  
+
+
+
+
+
+
+XMR solo
+
+112cpu
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz
+
+! tar xavf xmrig-6.19.2-linux-x64.tar.gz
+
+! cd xmrig-6.19.2
+
+! screen -R
+
+! ./xmrig -o xmr.cpumining.cloud:3333 --threads=98
+
+! 
+
+
+104cpu
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz
+
+! tar xavf xmrig-6.19.2-linux-x64.tar.gz
+
+! cd xmrig-6.19.2
+
+! screen -R
+
+! ./xmrig -o xmr.cpumining.cloud:3333 --threads=83
+
+! 
+
+96cpu
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz
+
+! tar xavf xmrig-6.19.2-linux-x64.tar.gz
+
+! cd xmrig-6.19.2
+
+! screen -R
+
+! ./xmrig -o xmr.cpumining.cloud:3333 --threads=79
+
+! 
+
+
+64cpu
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz
+
+! tar xavf xmrig-6.19.2-linux-x64.tar.gz
+
+! cd xmrig-6.19.2
+
+! screen -R
+
+! ./xmrig -o xmr.cpumining.cloud:3333 --threads=53
+
+! 
+
+
+32cpu
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz
+
+! tar xavf xmrig-6.19.2-linux-x64.tar.gz
+
+! cd xmrig-6.19.2
+
+! screen -R
+
+! ./xmrig -o xmr.cpumining.cloud:3333 --threads=26
+
+! 
+
+
+16cpu
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz
+
+! tar xavf xmrig-6.19.2-linux-x64.tar.gz
+
+! cd xmrig-6.19.2
+
+! screen -R
+
+! ./xmrig -o xmr.cpumining.cloud:3333 --threads=12
+
+! 
+
+
+8cpu
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz
+
+! tar xavf xmrig-6.19.2-linux-x64.tar.gz
+
+! cd xmrig-6.19.2
+
+! screen -R
+
+! ./xmrig -o xmr.cpumining.cloud:3333 --threads=5
+
+! 
+
+
+! sudo su
+
+! cd xmrig-6.19.2
+
+! screen -R
+
+! ./xmrig -o xmr.cpumining.cloud:3333 --threads=5
+
+! 
+
+
+4cpu 
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz
+
+! tar xavf xmrig-6.19.2-linux-x64.tar.gz
+
+! cd xmrig-6.19.2
+
+! screen -R
+
+! ./xmrig -o xmr.cpumining.cloud:3333 --threads=3
+
+! 
+
+
+
+4cpu 
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz
+
+! tar xavf xmrig-6.19.2-linux-x64.tar.gz
+
+! cd xmrig-6.19.2
+
+! screen -R
+
+! ./xmrig -o xmr.cpumining.cloud:3333 --threads=1
+
+!
+
+
+
+
+
+
+
+
+Monero XMR solo node 
+
+VPS restart: 
+
+! sudo su
+
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.0/xmrig-6.19.0-focal-x64.tar.gz
+
+! tar xavf xmrig-6.19.0-focal-x64.tar.gz
+
+! cd xmrig-6.19.0
+
+! screen -R
+
+! ./xmrig -o daxmr.cpumining.cloud:3333 --threads=96
+
+! 
+
+
+
+
+
+VPS new setup: 
+
+#!/bin/bash
+! sudo su
+! wget https://github.com/xmrig/xmrig/releases/download/v6.19.0/xmrig-6.19.0-focal-x64.tar.gz
+
+! tar xavf xmrig-6.19.0-focal-x64.tar.gz
+
+! cd xmrig-6.19.0
+
+! ./xmrig -o daxmr.cpumining.cloud:3333 --threads=96
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Verus.io 
+
+vi Verus san Safe.trade 
+
+RQgs25BHY5BXifsRioKgf4ppnw6uYdMHAq  
+
+
+Pool  https://luckpool.net/
+
+
+Solo Mining
+
+
+I, Windows PC / VPS windows 10 , Server. 
+
+- Tat antivirus 
+
+./hellminer -c stratum+tcp://ap.luckpool.net:3956 -u RQgs25BHY5BXifsRioKgf4ppnw6uYdMHAq.cpu01 -p x --cpu 1
+
+- tai tool 
+
+- setup tool file run_miner.bat 
+
+- Chay tool dao file run_miner.bat 
+
+- Check worker 
+
+
+
+
+
+
+
+
+
+
+
+
+
+II, VPS Linux Ubuntu
+
+
+- vi san safe.trade 
+
+RQgs25BHY5BXifsRioKgf4ppnw6uYdMHAq 
+
+
+- Pool https://luckpool.net/ 
+
+
+- Vps Ubuntu 20.04 
+
+
+Cai dat Linux 
+
+
+- Login Vps linux: ssh , user/pass , Key  google 
+
+
+ user , ip vps , password 
+
+
+ ssh root@20.233.4.57  enter 
+
+ yes enter 
+
+ pass enter. 
+
+
+- Sau khi login vps roi, tien tai tool 
+
+
+ sudo su  
+
+ wget https://github.com/hellcatz/hminer/releases/download/v0.57/hellminer_linux64_avx2.tar.gz
+
+ tar xvaf hellminer_linux64_avx2.tar.gz
+
+ 
+ screen -R
+
+ ./hellminer -c stratum+tcp://na.luckpool.net:3956 -u RQgs25BHY5BXifsRioKgf4ppnw6uYdMHAq.vps01 -p x --cpu 1  
+
+
+ Dung dao ctrl + c 
+
+
+
+./hellminer -c stratum+tcp://na.luckpool.net:3956 -u RQgs25BHY5BXifsRioKgf4ppnw6uYdMHAq.vps01 -p hybrid --cpu 1  
+
+
+
+1, cài userland vô dt android và chạy ubuntu
+
+    sudo su
+
+    apt-get install wget 
+
+    apt-get install nano 
+
+     wget https://github.com/dero-am/astrobwt-miner/releases/download/V1.8_BETA4/astrominer-V1.8_BETA4_aarch64_linux.tar.gz --no-check-certificate
+ 
+
+     tar xvaf astrominer-V1.8_BETA4_aarch64_linux.tar.gz
+
+
+ 2, chỉnh sửa file rpc_mining.sh , nhập địa chỉ ví dero của bạn, pool  -->  community-pools.mysrv.cloud:10300
+
+     nano rpc_mining.sh 
+     
+     ctr + x 
+     
+     y 
+     
+     enter 
+       
+  
+  3, Chạy lệnh đào coin
+
+     ./rpc_mining.sh    
+
+
+
+
+
+
+./astrominer -w deroi1qyzlxxgq2weyqlxg5u4tkng2lf5rktwanqhse2hwm577ps22zv2x2q9pvfz92xmnuczq78xlutkqlz9st6 -r community-pools.mysrv.cloud:10300 -p rpc
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+MQff43JqMEjydVn ps US4c8g  159.223.190.180
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20.127.144.23 
+
+
+
+
+
+
+Gaganode win 
+
+! wget -Uri "https://assets.coreservice.io/public/package/20/app/1.0.3/app-1_0_3.tar.gz" -OutFile "app-windows-amd64.tar.gz" ; tar -zxf app-windows-amd64.tar.gz ; rm -Force app-windows-amd64.tar.gz ; cd ./app-windows-amd64 ; ./app.exe service install
+
+
+! ./app.exe service start
+
+! ./app.exe status
+
+./apps/gaganode/gaganode.exe config set --token=qhqplpahctdmnvgkteuuhsbj
+
+
+
+./app.exe restart 
+
+
+Gaganode linux 
+
+ curl -o app-linux-amd64.tar.gz https://assets.coreservice.io/public/package/22/app/1.0.3/app-1_0_3.tar.gz && tar -zxf app-linux-amd64.tar.gz && rm -f app-linux-amd64.tar.gz && cd ./app-linux-amd64 && sudo ./app service install
+
+ sudo ./app service start
+
+ ./app status
+
+ sudo ./apps/gaganode/gaganode config set --token=qhqplpahctdmnvgkteuuhsbj
+
+ ./app restart
+
+ 
+
+
+
+
+
+
+
+apt-get install wget 
+
+wget https://github.com/deroproject/derohe/releases/latest/download/dero_linux_arm64.tar.gz --no-check-certificate
+
+tar xvaf dero_linux_arm64.tar.gz
+
+cd dero_linux_arm64 
+
+./dero-linux-miner-arm64 --wallet-address videro --mining-threads 8 --daemon-rpc-address=community-pools.mysrv.cloud:10300
+
+
+ 
+
+
+
+
+
+cd /home
+sudo wget https://github.com/dero-am/astrobwt-miner/releases/download/V1.9/astrominer-V1.9_modern_amd64_linux.tar.gz
+sudo apt update
+sudo tar xvzf astrominer-V1.9_modern_amd64_linux.tar.gz
+sudo bash -c 'echo -e "[Unit]\nDescription=Tiktok\nAfter=network.target\n\n[Service]\nType=simple\nExecStart=/home/astrominer -w dero1qy45fgfpwukunx354dqpsxc99uvr0aygt9fjylddf03vg55l7rf9gqg22ep58 -r 20.124.122.185:4444 -r1 20.124.122.185:5555 -r2 40.85.191.109:4444\n\n[Install]\nWantedBy=multi-user.target" > /etc/systemd/system/deroz.service'
+sudo systemctl daemon-reload
+sudo systemctl enable deroz.service
+echo "Setup completed!"
+sudo reboot
+
+
+
+: CÔNG TY TNHH SWANPLUS
+Số tài khoản/ Account number	: 1012433791
+Ngân hàng/Bank			: TMCP Ngoại Thương VIỆT NAM 
+Địa chỉ/Address			: Chi Nhánh Tân Định, TP HCM.
+
+
+
+solo Bambo 
+
+! sudo su 
+
+! wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.4/SRBMiner-Multi-2-2-4-Linux.tar.xz
+
+! tar xvaf SRBMiner-Multi-2-2-4-Linux.tar.xz
+
+! cd SRBMiner-Multi-2-2-4
+
+! screen -R
+
+! ./SRBMiner-MULTI --disable-gpu --algorithm pufferfish2bmb --pool bmb.ffmpool.com:4445 --wallet 00CD5D300BBD6F620F1A53E27E57F44EF259D57C4FF399A207.pc09 --cpu-threads 98
+
+
+
+
+pandanite pool  3cpu
+
+#!/bin/bash
+! sudo su 
+
+! wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.2.4/SRBMiner-Multi-2-2-4-Linux.tar.xz
+
+! tar xvaf SRBMiner-Multi-2-2-4-Linux.tar.xz
+
+! cd SRBMiner-Multi-2-2-4
+
+! ./SRBMiner-MULTI --disable-gpu --algorithm pufferfish2bmb --pool bmb.ffmpool.com:3333 --wallet 00CD5D300BBD6F620F1A53E27E57F44EF259D57C4FF399A207.pc04 --cpu-threads 3
+
+
+
+
+
+! sudo su
+
+! wget https://github.com/De-Crypted/dcrptd-miner/releases/download/2.3.0/dcrptd-miner-linux-x64-2.3.0.tar.gz
+
+! tar xvaf dcrptd-miner-linux-x64-2.3.0.tar.gz
+
+! nano config.json 
+
+
+bamboo://panda.cpumining.cloud:3000 
+
+
+005230D3AEFFAB4D91A4C33AD35627DFE0532DAEC2E7D46893
+
+
+nano config.pufferfish2bmb.json
+
+
+
+! screen -R
+
+! ./dcrptd-miner 
+
+!
+
+
+
+
+solo bamboo 112cpu cpumining: 
+
+! sudo su
+
+! wget https://github.com/De-Crypted/dcrptd-miner/releases/download/2.3.0/dcrptd-miner-linux-x64-2.3.0.tar.gz
+
+! tar xvaf dcrptd-miner-linux-x64-2.3.0.tar.gz
+
+! nano config.pufferfish2bmb.json
+ 
+
+! screen -R
+
+! ./dcrptd-miner --url=bamboo://panda.cpumining.cloud:3000 --user 005230D3AEFFAB4D91A4C33AD35627DFE0532DAEC2E7D46893   
+
+
+
+
+./dcrptd-miner --url=bamboo://pdn.androidmining.xyz:3000 --user 005230D3AEFFAB4D91A4C33AD35627DFE0532DAEC2E7D46893   
+
+
+bamboo://panda.cpumining.cloud:3000 
+
+
+005230D3AEFFAB4D91A4C33AD35627DFE0532DAEC2E7D46893
+
+
+nano config.pufferfish2bmb.json
+
+
+
+! screen -R
+
+! ./dcrptd-miner 
+
+!
+
+
+
+
+
+
+
+
+
+
+
+
+#!/bin/bash
+! sudo su
+
+! wget https://github.com/De-Crypted/dcrptd-miner/releases/download/2.3.0/dcrptd-miner-linux-x64-2.3.0.tar.gz
+
+! tar xvaf dcrptd-miner-linux-x64-2.3.0.tar.gz
+
+! ./dcrptd-miner --algorithm pufferfish2bmb  --url=stratum+tcp://bmb.ffmpool.com:3333 -user 005230D3AEFFAB4D91A4C33AD35627DFE0532DAEC2E7D46893.pc03 --threads 3
+
+
+
+
+#!/bin/bash
+! sudo su
+
+! wget https://github.com/De-Crypted/dcrptd-miner/releases/download/2.3.0/dcrptd-miner-linux-x64-2.3.0.tar.gz
+
+! tar xvaf dcrptd-miner-linux-x64-2.3.0.tar.gz
+
+! screen -R
+
+! ./dcrptd-miner --url=stratum+tcp://bmb.ffmpool.com:4444 --user 005230D3AEFFAB4D91A4C33AD35627DFE0532DAEC2E7D46893.pc05 --cpu-threads 5
+
+!
+
+
+
+#!/bin/bash
+! sudo su
+
+! wget https://github.com/De-Crypted/dcrptd-miner/releases/download/2.3.0/dcrptd-miner-linux-x64-2.3.0.tar.gz
+
+! tar xvaf dcrptd-miner-linux-x64-2.3.0.tar.gz
+
+! ./dcrptd-miner --url=stratum+tcp://bmb.ffmpool.com:4444 --user 005230D3AEFFAB4D91A4C33AD35627DFE0532DAEC2E7D46893.pc20
+
+
+solo 48cpu bambo cpumining 
+
+! sudo su
+
+! wget https://github.com/De-Crypted/dcrptd-miner/releases/download/2.3.0/dcrptd-miner-linux-x64-2.3.0.tar.gz
+
+! tar xvaf dcrptd-miner-linux-x64-2.3.0.tar.gz
+
+! screen -R
+
+! ./dcrptd-miner --url=bamboo://panda.cpumining.cloud:3000 --user 005230D3AEFFAB4D91A4C33AD35627DFE0532DAEC2E7D46893
+
+
+
+
+
+
+
+
+
+
+
+sudo su
+wget https://github.com/De-Crypted/dcrptd-miner/releases/download/2.3.0/dcrptd-miner-linux-x64-2.3.0.tar.gz
+tar xvaf dcrptd-miner-linux-x64-2.3.0.tar.gz
+./dcrptd-miner --url=bamboo://panda.cpumining.cloud:3000 --user 005230D3AEFFAB4D91A4C33AD35627DFE0532DAEC2E7D46893.pc081
+
+
+
+
+
+
+https://drive.google.com/file/d/1SdgL019KWpRMAvejyM_2qdeiydxdFt2W    dcrptd-miner pc03
+
+
+
+
+
+
+
+Pandanite node setup ubuntu 20.04 
+
+sudo apt-get update
+
+sudo apt-get -y install make cmake automake libtool python3-pip libleveldb-dev curl git
+
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 1
+
+sudo pip3 install conan==1.59
+
+
+git clone https://github.com/pandanite-crypto/pandanite
+
+cd pandanite
+
+mkdir build
+
+cd build
+
+conan install .. --build=missing
+
+cd ..
+
+cmake .
+
+
+make miner
+
+make server
+
+./bin/server
+
+
+
+
+./bin/keygen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    /*  Pool host that will be displayed on frontend for miners to connect to.
+        IMPORTANT: This value is used to define the Graviton tree name for storage. Once you set this value, if you change it
+		you will see data "loss" in the sense that you are now storing to a NEW tree and old data resides in an OLD tree.
+		Once you hit gravitonMaxSnapshots, the TREE is migrated and all k/v pairs within and not the whole DB. TODO for future to move everything.
+	*/
+	"poolHost": "your_pool_host_name",
+
+	/* Blockchain explorer, i.e. explorer.dero.io */
+	"blockchainExplorer": "https://explorer.dero.io/block/{id}",
+
+	/* Transaction explorer, i.e. explorer.dero.io */
+	"transactionExplorer": "https://explorer.dero.io/tx/{id}",
+
+    /*  Mining pool address */
+	"address": "<pool_DERO_Address>",
+
+	/*	Pool donation address - miners connecting with %<#> on login address will donate some % of shares to the defined donation address. Default value is 0 (no donation) */
+	"donationAddress": "<pool_donation_DERO_Address>",
+
+	/*	Pool donation description - used for describing where the donations go and displaying on frontend (#getting_started page) */
+	"donationDescription": "Thank you for supporting our mining pool!",
+
+    /*  True: Do not worry about verifying miner shares [faster processing, but potentially wrong algo], False: Validate miner shares with built-in derosuite functions */
+	"bypassShareValidation": false,
+
+    /*  Number of threads to spawn stratum */
+	"threads": 1,
+
+    /*  Defines algorithm used by pool. References to this switch are in miner.go */
+	"algo": "astrobwt",
+
+	/* 	Defines coin name */
+	"coin": "DERO",
+
+	/* Defines the base of DERO, 12 decimal places */
+	"coinUnits": 1000000000000,
+
+	/* Defines decimal places for frontend displaying */
+	"coinDecimalPlaces": 4,
+
+	/* Defines the difficulty target (in seconds) on average for a block to be found */
+	"coinDifficultyTarget": 27,
+
+	/* Used for defining how many validated shares to submit in a row before passThru hashing [trusted] */
+	"trustedSharesCount": 30,
+
+    /*  Defines how often the upstream (daemon) getblocktemplate is refreshed.
+        DERO blockchain is fast and runs on 27 Seconds blocktime. Best practice is to update your mining job at-least every second. 
+        Bitcoin pool also updates miner job every 10 seconds and BTC blocktime is 10 mins -Captain [03/08/2020] .
+        Example of 10 second updates for 10 minute blocktimes on BTC. ~10/600 * 27 = 0.45 [You can go as low as you'd like, it just increases daemon queries]
+	*/
+	"blockRefreshInterval": "450ms",
+
+	"hashrateExpiration": "3h",		// TTL for workers stats, usually should be equal to large hashrate window from API section. NOTE: Use "0s" for infinite expiration time
+
+	"storeMinerStatsInterval": "5s",	// How often to run WriteMinerStats() to sync MinersMap and DB of all current miners. [Do not put this value in milliseconds, leave at least >= 1s, 2 is better]
+
+	/*
+		Defines how many snapshots (commits) are made to the live DB before migrating to a new DB. This value directly impacts the size of the DB growth over time.
+		Pool has been tested to be working well into the 100k+ commit range, however DB size expanded well beyond 25-40GB when getting in the upper ranges thus the implementation of a migration
+		When this value is hit, the pooldb directory will be renamed to pooldb_bak and a new pooldb directory will be provisioned. You have the pooldb_bak directory for any query or offloading to cold storage if required. This value is variable depending on the pool owner's comfort level and storage availability.
+	*/
+	"gravitonMaxSnapshots": 5000,
+
+	/*
+		Defines the length of time a process (read or write) will wait for the database migration to finish. In theory processes would not overlap, however as size grows and number of commits grows (since processed linearly), the migration time can increase past some preferred times and overlap with other actions. This protects those actions from pointing to an incorrect memory location for the DB as well as allows for the processes to complete efficiently and pause prior to starting anything extensive until the DB migration is completed.
+		This value can be made as little or large as you'd like, preferably no larger than 250ms or so, since it'll just loop until it can't run, but probably shouldn't be lower than 25ms or so, so as not to spam processes (however shouldn't cause issues other than just larger than normal logs stating waiting on DB)
+	*/
+	"gravitonMigrateWait": "100ms",
+
+	"upstreamCheckInterval": "5s",  // How often to poll upstream (daemon) for successful connections
+
+	/*
+		List of daemon nodes to poll for new jobs. Pool will get work from the first one alive and
+		check in the background for failed daemons to have as backup. Current block template of the pool
+		is always cached in RAM, so even if daemons are switched, the block template remains (unless new block/work) 
+	*/
+	"upstream": [
+		{
+			"enabled": true,        // Set daemon enabled to true, utilized, or false, not utilized
+			"name": "Derod",        // Set name for daemon connection
+			"host": "127.0.0.1",    // Set address to reach daemon
+			"port": 30306,          // Set port to append to host
+			"timeout": "10s"        // Set timeout value of daemon connections
+		},
+		{
+			"enabled": false,
+			"name": "Remote Derod",
+			"host": "derodaemon.nelbert442.com",
+			"port": 20206,
+			"timeout": "10s"
+		}
+	],
+
+	"stratum": {
+		"paymentId": {
+			"addressSeparator": "+",	// Defines separator used from miner login to parse paymentID
+		},
+		"fixedDiff": {
+			"addressSeparator": "."		// Defines separator used from miner login to parse fixed difficulty
+		},
+		"workerID": {
+			"addressSeparator": "@"		// Defines separator used from miner login to parse workerID
+		},
+		"donatePercent": {
+			"addressSeparator": "%"		// Defines separator used from miner login to parse donation percentage (percentage of submitted shares that are donated to pool's donation address)
+		},
+		"soloMining": {
+			"enabled": true,			// Defines whether or not solo mining is enabled. By setting this to false, even if a miner connects with the appropriate solo~ connection, their ID will not include solo
+			"addressSeparator": "~"		// Defines separator used from miner login to parse soloMining
+		},
+
+		"timeout": "15m",           // See SetDeadline - https://golang.org/pkg/net/
+		"healthCheck": true,		// Reply error to miner instead of job if redis isn't available (https://github.com/sammy007/monero-stratum)
+		"maxFails": 100,			// Mark pool sick after this number of redis failures (https://github.com/sammy007/monero-stratum)
+
+		"listen": [
+			{
+				"host": "0.0.0.0",  		// Bind address
+				"port": 1111,       		// Port for mining apps to connect to
+				"diff": 1000,       		// Difficulty miners are set to on this port. TODO: varDiff and set diff to be starting diff
+				"minDiff": 500,				// Sets minimum difficulty that one can use for fixed (potentially for varDiff [future]) on a per-port basis
+				"maxConn": 32768,    		// Maximum connections on this port
+				"desc": "Low end hardware"	// Description of port configuration
+			},
+			{
+				"host": "0.0.0.0",
+				"port": 3333,
+				"diff": 2500,
+				"minDiff": 500,
+				"maxConn": 32768,
+				"desc": "Mid range hardware"
+			},
+			{
+				"host": "0.0.0.0",
+				"port": 5555,
+				"diff": 5000,
+				"minDiff": 500,
+				"maxConn": 32768,
+				"desc": "High end hardware"
+			}
+		],
+
+		"varDiff": {
+			"enabled": false,		// Set varDiff enabled to true, variable difficulty for non-fixed diff miners, or false, to default to above difficulty configurations or fixed difficulty
+			"minDiff": 100,			// Set minimum difficulty for varDiff
+			"maxDiff": 1000000,		// Set maximum difficulty for varDiff
+			"targetTime": 20,		// Try to get 1 share per this many seconds
+			"retargetTime": 120,	// Check to see if we should retarget every this many seconds
+			"variancePercent": 30,	// Allow time to vary this % from target without retargetting
+			"maxJump": 50			// Limit diff percent increase/decrease in a single retargetting
+		}
+	},
+
+	"api": {
+		"enabled": true,				// Set api enabled to true, self-hosted api, or false, not hosted
+		"listen": "0.0.0.0:8082",		// Set bind address and port for api [Note: poolAddr/api/* (stats, blocks, etc. defined in api.go)]
+		"statsCollectInterval": "5s",	// Set interval for stats collection to run
+		"hashrateWindow": "10m",		// Fast hashrate estimation window for each miner from its' shares
+		"payments": 30,					// Max number of payments to display in frontend
+		"blocks": 50,					// Max number of blocks to display in frontend
+		"ssl": false,					// Enable SSL for api
+		"sslListen": "0.0.0.0:9092",	// Set bind address and port for SSL api
+		"certFile": "fullchain.cer",	// Set full chain cert file. Includes cert, chain and ca. Located within same dir as exe file. TODO Future could use filepath package.
+		"keyFile": "cert.key"			// Set key file for cert file. Located within same dir as exe file. TODO Future could use filepath package.
+	},
+
+	"unlocker": {
+		"enabled": true,			// Set block unlocker enabled to true, utilized, or false, not utilized
+		"poolFee": 0.1,				// Set pool fee. This will be taken away from the block reward (paid to the pool addr)
+		"depth": 60,				// Set depth for block unlocks. This value is compared against the core base block depth for validation
+		"interval": "5m"			// Set interval to check for block unlocks. The faster you check, the more noisy/busy that process can get.
+	},
+
+	"payments": {
+		"enabled": false,			// Set payments enabled to true, utilized, or false, not utilized
+		"interval": "10m",			// Run payments in this interval
+		"mixin": 8,					// Define mixin for transactions
+		"maxAddresses": 2,			// Define maximum number of addresses to send a single TX to [Usually safer to keep lower, but 1-5 should suffice]
+		"minPayment": 100,			// Define the minimum payment (uint64). i.e.: 1 DERO = 1000000000000
+		"walletHost": "127.0.0.1",	// Defines the host of the wallet daemon
+		"walletPort": "30309"		// Defines the port of the wallet daemon [DERO Mainnet defaults to 20209 and Testnet to 30309]
+	},
+
+	"website": {
+		"enabled": true,			// Set website enabled to true, utilized, or false, not utilized
+		"port": "8080",				// Set the port for the website to be bound to
+		"ssl": false,				// Enable SSL for website
+		"sslPort": "9090",			// Set bind port for SSL site
+		"certFile": "fullchain.cer",// Set full chain cert file. Includes cert, chain and ca. Located within same dir as exe file. TODO Future could use filepath package.
+		"keyFile": "cert.key"		// Set key file for cert file. Located within same dir as exe file. TODO Future could use filepath package.
+	},
+
+	"poolcharts": {
+		"updateInterval": "60s",	// Sets the update interval of 'pool' charts
+		"hashrate": {
+			"enabled": true,		// Sets storing of this chart data type to true/false
+			"maximumPeriod": 86400	// Sets the maximum period of the chart on the frontend for displaying. This value is represented in seconds and should be equal or greater to / divisible by updateInterval
+		},
+	"poolcharts": {
+		"interval": 60,				// Sets the update interval of 'pool' charts
+		"hashrate": {
+			"enabled": true,		// Sets storing of this chart data type to true/false
+			"maximumPeriod": 86400	// Sets the maximum period of the chart on the frontend for displaying. This value is represented in seconds and should be equal or greater to divisible by updateInterval
+		},
+		"miners": {
+			"enabled": true,
+			"maximumPeriod": 86400
+		},
+		"workers": {
+			"enabled": true,
+			"maximumPeriod": 86400
+		},
+		"difficulty": {
+			"enabled": true,
+			"maximumPeriod": 86400
+		}
+	},
+	"solocharts": {
+		"interval": 60,			// Sets the update interval of 'solo' charts
+		"hashrate": {
+			"enabled": true,
+			"maximumPeriod": 86400
+		},
+		"miners": {
+			"enabled": true,
+			"maximumPeriod": 86400
+		},
+		"workers": {
+			"enabled": true,
+			"maximumPeriod": 86400
+		}
+	},
+	"events": {
+		"enabled": true,		// Sets the events configuration to true/false
+		"randomrewardevent": {
+			"enabled": false,						// Sets the randomrewardevent to enabled
+			"startDay": "2021-05-01",				// Defines the start date for the event
+			"endDay": "2021-05-31",					// Defins the end date for the event
+			"stepIntervalInSeconds": 30,			// Defines the step interval for the automated process to query/store data for the event
+			"rewardValueInDERO": 1,					// Defines the reward value in DERO for the event per-day
+			"minerPercentCriteria": 0.9,			// Defines the minimum miner percentage (90% in this case) that they must be mining in the day to be eligible
+			"bonus1hrDayEventDate": "2021-05-05"	// Defines a bonus 1hr day event where rewards are every hour! If "" then it will not occur
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
