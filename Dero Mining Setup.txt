@@ -16,8 +16,6 @@ Script auto đào Dero trên Android:
 
  ! chmod u+x astrominer 
 
- ! screen -R
-
  ! ./rpc_mining.sh 
 
  !
@@ -42,8 +40,6 @@ apt-get upgrade -y
  ! chmod +x rpc_mining.sh 
 
  ! chmod u+x astrominer 
-
- ! screen -R
 
  ! ./rpc_mining.sh 
 
