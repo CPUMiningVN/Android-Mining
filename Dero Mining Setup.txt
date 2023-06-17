@@ -6,6 +6,8 @@
 
 Script auto đào Dero trên Android: 
 
+Clip setup từng bước : https://youtu.be/Sq2YUR06uVY
+
 ! sudo su 
 
 ! git https://github.com/CPUMiningVN/HD.git
