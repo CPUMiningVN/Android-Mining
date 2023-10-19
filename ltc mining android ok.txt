@@ -1,0 +1,18 @@
+
+
+- Dao coin Litecoin LTC Pool Binance cho Android 2023: 
+
+apt-get update -y
+
+apt-get upgrade -y 
+
+git clone https://github.com/tpruvot/cpuminer-multi
+
+sudo apt-get install automake libcurl4-openssl-dev pkg-config libjansson-dev libssl-dev libgmp-dev make g++ autoconf
+
+cd cpuminer-multi
+
+./build.sh
+
+./cpuminer 
+
